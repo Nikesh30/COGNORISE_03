@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="title">BMI Calculator</h1>
+
+        <div class="age">
+            <h3 id="age_input">Your Age</h3>
+            <input type="text" id="age_value" placeholder="Your age" required>
+        </div>
+
+        <div class="gender">
+            <input type="radio" name="radio" id="male_input">Male
+            <input type="radio" name="radio" id="female_input">Female
+        </div>
+
+        <div class="measurements">
+            <div class="height_details">
+                <h4 id="height_input">Your Height</h4>
+                <input type="number" id="height_value" placeholder="height in cm" required>
+            </div>
+            <div class="weight_details">
+                <h4 id="weight_input">Your Weight</h4>
+                <input type="number" id="weight_value" placeholder="weight in cm" required>
+            </div>
+        </div>
+
+        <button id="submit" onclick="calculate()">Check Now</button>
+
+        <h2 id="result">Your BMI value is</h2>
+        <h3 id="result_value">0.00</h3>
+        <p id="comment"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
